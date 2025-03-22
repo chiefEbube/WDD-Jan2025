@@ -24,6 +24,8 @@
     /* White */
     --silver-background-color: #F5F7FA;
     /* Silver background*/
+    --black-color: #18191F;
+    /* Black */
 }
 
 body {
@@ -48,8 +50,26 @@ button {
     font-weight: 600;
 }
 
+h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--d_grey-color);
+}
+
+span {
+    color: var(--primary-color);
+}
+
+/* Header */
+
+header {
+    height: 100vh;
+    background-color: #4CAF4F;
+}
+
 nav {
     background-color: var(--white-color);
+    height: 13vh;
 }
 
 .nav-wrapper {
@@ -66,6 +86,7 @@ nav {
 }
 
 .nav-links a {
+    /* Header section */
     color: var(--d_grey-color);
     text-decoration: none;
     font-size: 1rem;
@@ -80,13 +101,12 @@ nav {
     width: 150%;
 }
 
-/* Header section */
-
-header {
+.hero-section {
     background-color: var(--silver-background-color);
+    height: calc(100vh - 13vh);
 }
 
-.header-wrapper {
+.hero-section-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,73 +114,72 @@ header {
     padding: 4em 0;
 }
 
-.header-wrapper .left {
+.hero-section-wrapper .left {
     width: 60%;
 }
 
-.header-wrapper .left h1 {
+.hero-section-wrapper .left h1 {
     font-size: 4rem;
     font-weight: 600;
     color: var(--d_grey-color);
 }
 
-.header-wrapper .left h1 span {
-    color: var(--primary-color);
-}
-
-.header-wrapper .left p {
+.hero-section-wrapper .left p {
     font-size: 1.125rem;
     color: var(--grey-color);
     margin-block: 1.5em;
 }
 
-.header-wrapper .right {
+.hero-section-wrapper .right {
     width: 35%;
 }
 
-.header-wrapper .right img {
+.hero-section-wrapper .right img {
     width: 100%;
     margin-inline: auto;
 }
 
-.our-client, .card-section {
+.our-client,
+.card-section {
     background-color: var(--white-color);
     padding-block: 4em;
 }
 
-.client-wrapper h2, .client-wrapper p, .card-section-wrapper h2, .card-section-wrapper p {
+.client-wrapper h2,
+.client-wrapper p,
+.card-section-wrapper h2,
+.card-section-wrapper p {
     text-align: center;
 }
 
-.client-wrapper h2, .card-section-wrapper h2 {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: var(--d_grey-color);
+.client-wrapper h2,
+.card-section-wrapper h2 {
     max-width: 600px;
     margin-inline: auto;
 }
 
-.client-wrapper p, .card-section-wrapper p {
+.client-wrapper p,
+.card-section-wrapper p {
     font-size: 1rem;
     color: var(--grey-color);
     margin-block: 1em;
 }
 
-.client-logos{
+.client-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 3em;
 }
 
-.cards{
+.cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 7em;
     margin-top: 2em;
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -171,9 +190,77 @@ header {
 }
 
 .card h3 {
-    font-size: 2rem;
-    font-weight: 600;
-    color: var(--d_grey-color);
     text-align: center;
     padding-inline: 1em;
+}
+
+.learn-more-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+.learn-more-wrapper .left {
+    width: 40%;
+}
+
+.learn-more-wrapper .left img {
+    width: 100%;
+    margin-inline: auto;
+}
+
+.learn-more-wrapper .right {
+    width: 60%;
+}
+
+.learn-more-wrapper .right p {
+    font-size: 1rem;
+    color: var(--grey-color);
+    margin-block: 1.5em;
+}
+
+
+.helping-section {
+    background-color: var(--silver-background-color);
+    padding-block: 4em;
+}
+
+.helping-section-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5em;
+}
+
+.helping-section-wrapper .left p{
+    color: var(--black-color);
+    font-size: 1rem;
+    margin-top: 1em;
+}
+
+.helping-section-wrapper .right, .helping-section-wrapper .left {
+    width: 50%;
+}
+ 
+.top,
+.bottom {
+    display: flex;
+    gap: 3rem;
+    margin-block: 3em;
+}
+
+.item {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.item-image{
+    width: 50px
+}
+
+.item-image img {
+    width: 100%;
 }
